@@ -2,12 +2,33 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <link rel="stylesheet" href="./styles/styles.css" />
-    <title>Document</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./styles/todo-icon.png" />
+    <title>To-do List</title>
   </head>
   <body>
-    <h1>Mi TODO list</h1>
+    <div class="container">
+      <aside class="sidebar">
+      <h1 class="brand">My To-Do List</h1>
+      <nav>
+        <ul class="menu">
+          <li><button class="filter-button active" data-filter="all">All</button></li>
+          <li><button class="filter-button" data-filter="pending">Pending</button></li>
+          <li><button class="filter-button" data-filter="completed">Completed</button></li>
+        </ul>
+      </nav>
+      </aside>
+      <main class="central-container" aria-live="polite">
+        <ul id="task-list" class="task-list" aria-label="Task list"></ul>
+        <section class="task-input" aria-label="Add new task">
+          <label for="new-task" class="visually-hidden"></label>
+          <input type="text" id="new-task" placeholder="Write a task title..." autocomplete="off" />
+          <input type="text" id="task-desc" placeholder="Write a description..." autocomplete="off" />
+          <button id="add-task" aria-label="Add task">Add</button>
+        </section>
+      </main>
+    </div>
     <script src="scripts/script.js"></script>
   </body>
 </html>
