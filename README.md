@@ -5,7 +5,7 @@
 - **Código:** 0000337853
 - **Correo:** lauraherrod@unisabana.edu.co
 ## Enlace de despliegue (GitHub Pages)
-[Ver página desplegada]()
+[Ver página desplegada](https://dsaw-2025-ii.github.io/dom-manipulation-Lauraher2906/)
 
 # Lista de Tareas
 
